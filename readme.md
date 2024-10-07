@@ -88,9 +88,8 @@ output "autonomous-vmcluster-id" {
 | time_zone | The time zone to use for the Autonomous VM cluster | `string` | n/a | No |
 | total_container_databases | The total number of Autonomous Container Databases that can be created | `number` | n/a | No |
 | vm_cluster_network_id | The OCID of the VM cluster network| `string` | n/a | No |
-| groups | list of azure AD groups that will manage objects inside the bucket | `list(string)` | n/a | No |
+| groups | list of azure AD groups that will manage objects inside the bucket | `list(string)` | `[]` | No |
 | compartment | compartment name that will be used for policy creation | `string` | n/a | No |
-| enable_group_access | enables the policy creation. If true the groups var should have a least one value | `bool` | `true` | No |
 
 # Object variables for blocks
 
